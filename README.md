@@ -1,3 +1,19 @@
+# setup
+
+npm install primeng --save
+npm install primeicons --save
+npm install font-awesome --save
+npm install @angular/cdk --save
+update styles in angular.json
+
+"./node_modules/primeicons/primeicons.css",
+  "./node_modules/primeng/resources/primeng.min.css",
+
+  update app module
+  DropdownModule
+
+  https://primefaces.org/primeng
+
 # Primeng
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
