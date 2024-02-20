@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { BasicComponent } from './basic/basic.component';
 
 import { FormsModule } from '@angular/forms';
+import { ReviewComponent } from './review/review.component';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BasicComponent
+    BasicComponent,
+    ReviewComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
