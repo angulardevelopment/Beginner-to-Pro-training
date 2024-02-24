@@ -1,46 +1,52 @@
 <ng-container class="pricing_comp">
   <header>
     <h1>Our Pricing</h1>
-    <div class="toggle">
-      <label>Annually </label>
-      <div class="toggle-btn">
+    <div class="toggle toggle-heading">
+      <label class="label-heading ">Each program we offer is designed to help you achieve goals, meet objectives, and succeed in your life and career on your path to getting hired.
+        The new batch starts soon.
+        Limited slots are available.
+        4 weeks of online sessions.
+
+
+      </label>
+      <!-- <div class="toggle-btn">
         <input type="checkbox" class="checkbox" id="checkbox" />
         <label class="sub" id="sub" for="checkbox">
           <div class="circle"></div>
         </label>
-      </div>
-      <label> Monthly</label>
+      </div>-->
+      <!-- <label> Monthly</label> -->
     </div>
   </header>
   <div class="cards">
     <div class="card shadow">
       <ul>
         <li class="pack">Basic</li>
-        <li id="basic" class="price bottom-bar">&dollar;199.99</li>
-        <li class="bottom-bar">500 GB Storage</li>
+        <li id="basic" class="price bottom-bar">&#8377;10K/&dollar;150</li>
+        <!-- <li class="bottom-bar">500 GB Storage</li>
         <li class="bottom-bar">2 Users Allowed</li>
-        <li class="bottom-bar">Send up to 3 GB</li>
-        <li><button class="btn">Learn More</button></li>
+        <li class="bottom-bar">Send up to 3 GB</li> -->
+        <li><button class="btn" (click)="goToLink('https://breezy-debt-856.notion.site/Basic-c175c6f1954f4d28b943885aeab70c5b?pvs=4')">Learn More</button></li>
       </ul>
     </div>
     <div class="card active">
       <ul>
         <li class="pack">Professional</li>
-        <li id="professional" class="price bottom-bar">&dollar;249.99</li>
-        <li class="bottom-bar">1 TB Storage</li>
+        <li id="professional" class="price bottom-bar">&#8377;15K/&dollar;200</li>
+        <!-- <li class="bottom-bar">1 TB Storage</li>
         <li class="bottom-bar">5 Users Allowed</li>
-        <li class="bottom-bar">Send up to 10 GB</li>
-        <li><button class="btn active-btn">Learn More</button></li>
+        <li class="bottom-bar">Send up to 10 GB</li> -->
+        <li><button class="btn active-btn" (click)="goToLink('https://breezy-debt-856.notion.site/Professional-492b71784df74faaaa3c336efa41b141?pvs=4')">Learn More</button></li>
       </ul>
     </div>
     <div class="card shadow">
       <ul>
         <li class="pack">Master</li>
-        <li id="master" class="price bottom-bar">&dollar;399.99</li>
-        <li class="bottom-bar">2 TB Storage</li>
+        <li id="master" class="price bottom-bar">&#8377;20K/&dollar;250</li>
+        <!-- <li class="bottom-bar">2 TB Storage</li>
         <li class="bottom-bar">10 Users Allowed</li>
-        <li class="bottom-bar">Send up to 20 GB</li>
-        <li><button class="btn">Learn More</button></li>
+        <li class="bottom-bar">Send up to 20 GB</li> -->
+        <li><button class="btn" (click)="goToLink('https://breezy-debt-856.notion.site/Master-c6af5d72a6e840539f6e68e5474f2d3f?pvs=4')">Learn More</button></li>
       </ul>
     </div>
   </div>

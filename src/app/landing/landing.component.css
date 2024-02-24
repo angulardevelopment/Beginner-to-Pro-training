@@ -1,0 +1,13 @@
+.align-h1{
+  text-align: center;
+}
+
+h4{
+  text-transform: capitalize;
+}
+
+@media (max-width: 600px) {
+  .pricing-tables-wrap{
+flex-direction: column;
+  }
+}
