@@ -13,3 +13,10 @@ html {
 h4, p {
   text-transform: capitalize;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.align-h1 {
+  text-align: center;
+}

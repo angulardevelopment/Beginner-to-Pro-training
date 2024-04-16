@@ -1,11 +1,10 @@
-.align-h1{
-  text-align: center;
+.logo-img {
+  width: 32px;
+  height: 32px;
 }
 
-
-
 @media (max-width: 600px) {
-  .pricing-tables-wrap{
-flex-direction: column;
+  .pricing-tables-wrap {
+    flex-direction: column;
   }
 }

@@ -1,0 +1,41 @@
+<h1 class="align-h1">Frequently Asked Questions</h1>
+<div class="portal-help-markdown" fxLayout="row wrap" fxLayoutGap="32px grid">
+	<div fxFlex="100">
+		<!-- Loader -->
+		<mat-spinner *ngIf="loading" aria-label="Loading Faq page"></mat-spinner>
+
+		<!-- Error -->
+		<mat-error *ngIf="errorLoading">
+			There was an issue loading the FAQs.
+		</mat-error>
+	</div>
+
+	<!-- FAQs -->
+	<ng-container *ngFor="let faqGroup of sectionedFaqs">
+		<div fxFlex="100" fxFlex.gt-md="50" *ngIf="faqGroup.questions?.length > 0">
+			<mat-card>
+				<mat-card-header>
+					<mat-card-title>
+						{{ faqGroup.category?.text }}
+					</mat-card-title>
+				</mat-card-header>
+				<mat-card-content>
+					<mat-accordion class="portal-expansion-panels">
+						<mat-expansion-panel *ngFor="let faq of faqGroup.questions" [id]="faq.refId"
+							[expanded]="faqRef === faq.refId">
+							<mat-expansion-panel-header>
+                <!-- collapsedHeight="32px" -->
+								<mat-panel-title>
+									{{ faq.question?.text }}
+								</mat-panel-title>
+							</mat-expansion-panel-header>
+							<div *ngFor="let markdown of faq.content" [innerHTML]="renderMarkdown(markdown['raw'])">
+							</div>
+						</mat-expansion-panel>
+					</mat-accordion>
+				</mat-card-content>
+			</mat-card>
+		</div>
+	</ng-container>
+
+</div>
